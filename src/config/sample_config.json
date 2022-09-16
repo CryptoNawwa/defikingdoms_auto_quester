@@ -1,0 +1,142 @@
+{
+  "wallet": {
+    "address": "",
+    "encryptedWalletPath": "./w.json",
+    "encryptedWalletPathPassword": "./secret.txt"
+  },
+
+  "telegramBotToken" : "",
+  "telegramChannelId" : "",
+  "gardensToClaim": [],
+
+  "gas" : {
+    "gasPrice": 30000000000,
+    "gasLimit" : 15000000
+  },
+
+  "printGardenData": false,
+
+  "pollingIntervalInstantQuest" : 40000,
+  "pollingIntervalError": 60000,
+  "pollingIntervalQuest" : 15720000,
+
+  "autoSellMiningRewards": false,
+  "autoStakeMiningRewards": false,
+
+  "jewelSwap" : {
+    "activated": true,
+    "jewel" : "0x72cb10c6bfa5624dd07ef608027e366bd690048f",
+    "preferredSwap": "usdc",
+    "swapPools" : [{
+      "name": "usdc",
+      "pool" : "0xA1221A5BBEa699f507CC00bDedeA05b5d2e32Eba",
+      "token"  : "0x985458e523db3d53125813ed68c274899e9dfab4",
+      "decimals": 6
+    },
+      {
+        "name": "busd",
+        "pool" : "0xE01502Db14929b7733e7112E173C3bCF566F996E",
+        "token"  : "0xe176ebe47d621b984a73036b9da5d834411ef734",
+        "decimals": 18
+      }
+    ]
+  },
+
+  "bankContract" : "0xA9cE83507D872C5e1273E745aBcfDa849DAA654F",
+  "dexContract" : "0x24ad62502d1C652Cc7684081169D04896aC20f30",
+  "gardensContract" : "0xDB30643c71aC9e2122cA0341ED77d09D5f99F924",
+  "questContract": "0x5100Bd31b822371108A0f63DCFb6594b9919Eaf4",
+  "heroContract": "0x5f753dcdf9b1ad9aabc1346614d1f4746fd6ce5c",
+
+  "fallbackRpcOnError": true,
+  "numberOfErrorBeforeFallBack": 2,
+  "maximumSwitchBeforeAddingDelay": 4,
+  "rpcs" : {
+    "harmonyRpc": "https://api.harmony.one",
+    "poktRpc": "https://harmony-0-rpc.gateway.pokt.network",
+    "fuzzRpc": "https://api.fuzz.fi",
+    "hermesRpc": "https://rpc.hermesdefi.io"
+  },
+  "quests": [
+    {
+      "name": "Fishing",
+      "activated": false,
+      "heroTeam" : [{
+        "name": "Team 1",
+        "heroes": [],
+        "minTeamSize": 0,
+        "minStaminaRequired": 26
+      }],
+      "contractAddress": "0xE259e8386d38467f0E7fFEdB69c3c9C935dfaeFc"
+    },
+    {
+      "name": "Foraging",
+      "activated": false,
+      "heroTeam" : [{
+        "name": "Team 1",
+        "heroes": [],
+        "minTeamSize": 0,
+        "minStaminaRequired": 25
+      }],
+      "contractAddress": "0x3132c76acF2217646fB8391918D28a16bD8A8Ef4"
+    },
+    {
+      "name": "WishingWell",
+      "activated": false,
+      "heroTeam" : [{
+        "name": "Team 1",
+        "heroes": [],
+        "minTeamSize": 0,
+        "minStaminaRequired": 25
+      }],
+      "contractAddress": "0x0548214A0760a897aF53656F4b69DbAD688D8f29"
+    },
+    {
+      "name": "JewelMining",
+      "activated": true,
+      "heroTeam" : [
+        {
+          "name": "Jewel team 1",
+          "heroes": [11111, 11111],
+          "minTeamSize": 2,
+          "minStaminaRequired": 15
+        },{
+          "name": "Jewel team 2",
+          "heroes": [11111, 11111],
+          "minTeamSize": 2,
+          "minStaminaRequired": 15
+        },
+        {
+          "name": "Jewel team 3",
+          "heroes": [11111, 11111],
+          "minTeamSize": 2,
+          "minStaminaRequired": 15
+        }
+      ],
+      "contractAddress": "0x6ff019415ee105acf2ac52483a33f5b43eadb8d0"
+    },
+    {
+      "name": "GoldMining",
+      "activated": false,
+      "heroTeam" : [{
+        "name": "Gold team 1",
+        "heroes": [],
+        "minTeamSize": 3,
+        "minStaminaRequired": 26
+      }],
+      "contractAddress": "0x569e6a4c2e3af31b337be00657b4c040c828dd73"
+    },
+    {
+      "name": "Gardening",
+      "activated": false,
+      "heroTeam" : [{
+        "name": "TEAM JEWEL/LUNA",
+        "heroes": [],
+        "gardenId" : 1,
+        "minTeamSize": 1,
+        "minStaminaRequired": 25
+      }],
+      "contractAddress": "0xe4154B6E5D240507F9699C730a496790A722DF19"
+    }
+  ]
+}
