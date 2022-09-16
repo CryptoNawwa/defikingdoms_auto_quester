@@ -264,7 +264,7 @@ export class QuestManager {
     }
 
     private async startQuestWithData(quest: IStartableQuest) {
-        if (!quest.team.gardenId || quest.team.gardenId <= 0) {
+        if (!quest.team.gardenId) {
             DFKLogger.log.silly(`No gardenId found - can't launch quest.`);
             return ;
         }
