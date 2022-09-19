@@ -1,6 +1,7 @@
 # DeFi Kingdoms Auto quester for Serendale
 Full automatic quester for the DeFi game called Defi-Kingdoms 
 
+OUTDATED - Use it as a template or inspiration for your own thing
 
 ## Information
 ![pdf](./pdf/pdf_image.jpg)
